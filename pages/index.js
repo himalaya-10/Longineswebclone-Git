@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import Navbar from './navbar'
+import Footer from './footer'
 import { Style } from 'next';
 import { useEffect, useLayoutEffect, useState } from 'react'
 import Script from 'next/script';
@@ -69,7 +70,7 @@ export default function Home() {
         }
             `}</style>
           </div>
-          <div className="times h-[30vh] w-[40vw] absolute top-[40vh] left-[5vw] bottom-[20vh]">
+          <div className="up opacity-0 times h-[30vh] w-[40vw] absolute top-[40vh] left-[5vw] bottom-[20vh]">
             <div className='title font-sans font-bold text-lg mt-[10] md:mb-2'>{cctitle.new}</div>
             <div className='title font-mono font-extrabold text-[4rem]'>{cctitle.title}</div>
             <button className='title mt-3 bg-blue-900 text-white h-[50px] w-[100px] rounded-[100px]'>Discover</button>
@@ -94,8 +95,9 @@ export default function Home() {
           </div>
         </div>
         <div className="flex justify-center mt-12 mb-10  md:m-[4rem]">
-          <div className="times menimg box w-[45vw] rounded-sm h-[70vh] bg-cover md:rounded-l-[500px] md:w-[40vw] text-gray-900"><div className='mt-5 mr-5 title flex relative top-[100%]  justify-end font-bold text-3xl md:text-7xl'>Men</div> <div className='mt-1 mr-5 flex relative top-[100%]  justify-end font-bold text-xl'>Watches</div></div>
-          <div className="times womenimg box w-[45vw]  rounded-sm h-[70vh] bg-cover md:rounded-r-[500px] md:w-[40vw]"><div className=' mt-5 ml-5 title flex relative top-[100%]  justify-start font-bold text-3xl md:text-7xl'>Women</div> <div className='mt-1 ml-5 title flex relative top-[100%]  justify-start font-bold text-xl'>Watches</div></div>
+          <div className="up opacity-0 times menimg box w-[45vw] rounded-sm h-[70vh] bg-cover md:rounded-l-[500px] md:w-[40vw] text-gray-900">
+            <div className='mt-5 mr-5 title flex relative top-[100%]  justify-end font-bold text-3xl md:text-7xl'>Men</div> <div className='mt-1 mr-5 flex relative top-[100%]  justify-end font-bold text-xl'>Watches</div></div>
+          <div className="upd opacity-0 times womenimg box w-[45vw]  rounded-sm h-[70vh] bg-cover md:rounded-r-[500px] md:w-[40vw]"><div className=' mt-5 ml-5 title flex relative top-[100%]  justify-start font-bold text-3xl md:text-7xl'>Women</div> <div className='mt-1 ml-5 title flex relative top-[100%]  justify-start font-bold text-xl'>Watches</div></div>
           <style jsx>{`
             .menimg{
               background-image: url("/mens.jpg");
@@ -135,13 +137,13 @@ export default function Home() {
           `}</style>
         </div>
       </div>
-      <div className='hidden sm:grid justify-center'>
+      <div className='hidden up opacity-0  sm:grid justify-center'>
         <div className='flex justify-center'>
           <div className="w-[98vw] text-[12px] md:w-[780px] flex m-1 mt-[100px]  justify-between bg-white h-12 p-2 font-bold  md:text-sm">
-            <div className="times">NOVELITIES</div>
+            <div className=" times">NOVELITIES</div>
             <div className="times">BEST-SELLERS</div>
-            <div className="times">THE LONGINES MASTER COLLECTION</div>
-            <div className="times">LONGINESDOLCEVITA</div>
+            <div className=" times">THE LONGINES MASTER COLLECTION</div>
+            <div className=" times">LONGINESDOLCEVITA</div>
 
             <style jsx>{`
            .times{
@@ -161,7 +163,7 @@ export default function Home() {
             `}
             </style>
 
-            <div className='w-[303px] h-[502px] m-4'>
+            <div className='upd opacity-0 w-[303px] h-[502px] m-4'>
               <div className='hover:scale-105 transition ease 0.5s cursor-pointer'><Image src='/novelities/watch-collection-hydroconquest-l3-790-4-96-6-1689159632.png'
                 height={293}
                 width={293} />
@@ -175,7 +177,7 @@ export default function Home() {
               <div className='m-1 text-center times text-gray-700 text-sm'>Stainless steel and ceramic bezel</div>
               <div className='m-1 text-center times text-gray-700 text-sm'>price</div>
             </div>
-            <div className='w-[303px] h-[502px] m-4'>
+            <div className='upd1 opacity-0 w-[303px] h-[502px] m-4'>
               <div><Image src='/novelities/watch-collection-hydroconquest-l3-790-4-96-6-1689159632.png'
                 height={293}
                 width={293} />
@@ -189,7 +191,7 @@ export default function Home() {
               <div className='m-1 text-center times text-gray-700 text-sm'>Stainless steel and ceramic bezel</div>
               <div className='m-1 text-center times text-gray-700 text-sm'>price</div>
             </div>
-            <div className='w-[303px] h-[502px] m-4'>
+            <div className='upd2 opacity-0 w-[303px] h-[502px] m-4'>
               <div><Image src='/novelities/watch-collection-hydroconquest-l3-790-4-96-6-1689159632.png'
                 height={293}
                 width={293} />
@@ -203,7 +205,7 @@ export default function Home() {
               <div className='m-1 text-center times text-gray-700 text-sm'>Stainless steel and ceramic bezel</div>
               <div className='m-1 text-center times text-gray-700 text-sm'>price</div>
             </div>
-            <div className='w-[303px] h-[502px] m-4'>
+            <div className='upd3 opacity-0 w-[303px] h-[502px] m-4'>
               <div><Image src='/novelities/watch-collection-hydroconquest-l3-790-4-96-6-1689159632.png'
                 height={293}
                 width={293} />
@@ -217,7 +219,7 @@ export default function Home() {
               <div className='m-1 text-center times text-gray-700 text-sm'>Stainless steel and ceramic bezel</div>
               <div className='m-1 text-center times text-gray-700 text-sm'>price</div>
             </div>
-            <div className='w-[303px] h-[502px] m-2'>
+            <div className='upd opacity-0 w-[303px] h-[502px] m-2'>
               <div className='hover:scale-105'><Image src='/novelities/watch-collection-hydroconquest-l3-790-4-96-6-1689159632.png'
                 height={293}
                 width={293} />
@@ -232,7 +234,7 @@ export default function Home() {
               <div className='m-1 text-center times text-gray-700 text-sm'>Stainless steel and ceramic bezel</div>
               <div className='m-1 text-center times text-gray-700 text-sm'>price</div>
             </div>
-            <div className='w-[303px] h-[502px] m-2'>
+            <div className='upd1 opacity-0 w-[303px] h-[502px] m-2'>
               <div><Image src='/novelities/watch-collection-hydroconquest-l3-790-4-96-6-1689159632.png'
                 alt='watch'
                 height={293}
@@ -258,7 +260,7 @@ export default function Home() {
 
           </div>
         </div>
-        <div className="flex justify-center items-center md:m-5">
+        <div className="up opacity-0 flex justify-center items-center md:m-5">
           <div className="flex m-4 w-[80vw] h-1 bg-gray-200"><div className='scroll2 relative left-0  w-[50%] bg-blue-950  duration-300 ease'></div>
             <style jsx>{`
           .moveleft{
@@ -268,17 +270,142 @@ export default function Home() {
           </div>
           <div><i className="backbtn m-2 fa-solid fa-chevron-left hover:scale-150 cursor-pointer"></i></div>
           <div><i className="nextbtn m-2 fa-solid fa-chevron-right hover:scale-150 cursor-pointer"></i></div>
-        </div>  
-      </div>
-      <div className='grid md:m-1 justify-center w-[100vw] md:flex  mt-[100px]'>
-        <div className="flex w-[100vw] md:w-[500px] h-[700px] justify-center">
-          <div className="mt-[100px] w-[430px] h-[320px] rounded-l-[500px] rounded-r-[500px] rotate-[-45deg] overflow-hidden"><Image className='relative left-9 top-[-35%] hover:scale-110 transition duration-300 ease cursor-pointer' src='/oval/819-L3.780.3.78_Hydroconquest.jpg.webp' height={404} width={404} alt='watch' style={{ rotate: '45deg' }} /></div>
-        </div>
-        <div className="flex w-[100vw] md:w-[500px] h-[700px] justify-center">
-          <div className="mt-[100px] w-[430px] h-[320px] rounded-l-[500px] rounded-r-[500px] rotate-[-45deg] overflow-hidden"><Image className='relative left-9 top-[-35%] hover:scale-110 transition duration-300 ease cursor-pointer' src='/oval/820-L3.374.4.40_Legend_Diver_watch.jpg.avif' height={404} width={404} alt='watch' style={{ rotate: '45deg' }} /></div>
         </div>
       </div>
+      <div className='up opacity-0 fontfam mt-[100px] mb-5 cover w-[100vw] h-[500px]'><div className='m-5 absolute mt-[100px] text-white'><div className='text-[50px] sm:text-[90px]'>Longines Spirit Flyback</div><div className='m-4 hover:translate-x-2 transition ease cursor-pointer'>Discover the watch <i className="fa-solid fa-arrow-right" style={{ color: "#ffffff" }}></i></div></div>
+        <style jsx>
+          {`
+        .fontfam{
+          font-family: 'Montserrat', sans-serif;
+        }
+
+        .cover{
+          position:relative;
+        }
+        .cover::before{
+          content:'';
+          position:absolute;
+          top:0;
+          left:0;
+          background-image: url("/covers/816-Cover Flyback.jpg/");
+          background-size:cover;
+          filter:brightness(0.5);
+          width: 100%;
+          height: 100%;
+          
+        }
+        `}
+        </style>
+      </div>
+      <div className='up opacity-0 grid md:m-1 justify-center w-[100vw] md:flex  mt-[10px]'>
+        <div className="flex w-[100vw] md:w-[500px] h-[700px] justify-center">
+          <div className='grid'>
+            <div className="mt-[100px] w-[300px] h-[255px] md:w-[430px] md:h-[320px] rounded-l-[500px] rounded-r-[500px] rotate-[-45deg]  overflow-hidden"><Image className='relative left-9 top-[-35%] hover:scale-110 transition duration-300 ease cursor-pointer' src='/oval/819-L3.780.3.78_Hydroconquest.jpg.webp' height={404} width={404} alt='watch' style={{ rotate: '45deg' }} />
+            </div>
+            <div className='fontfam font-serif font-bold text-lg mt-[80px] text-center '>HYDROCONQUEST</div>
+            <div className='fontfam w-[300px] md:w-[400px]  text-sm mt-[40px] text-center text-gray-600'>Inspired by the unique requirements of this sport, HYDROCONQUEST timepieces preserve the traditional style of diving watches.</div>
+            <button className='fontfam mt-3 bg-blue-900 text-white h-[50px] w-[100px] rounded-[100px] ml-[30%]'>Discover</button>
+            <style jsx>
+              {`
+              .fontfam{
+                font-family: 'Montserrat', sans-serif;
+              }
+              `}
+            </style>
+          </div>
+        </div>
+
+        <div className="upd opacity-0 flex w-[100vw] md:mt-[200px] md:w-[500px] h-[700px] justify-center">
+          <div className='grid'>
+            <div className="mt-[100px] w-[300px] h-[255px] md:w-[430px] md:h-[320px] rounded-l-[500px] rounded-r-[500px] rotate-[-45deg]  overflow-hidden"><Image className='relative left-9 top-[-35%] hover:scale-110 transition duration-300 ease cursor-pointer' src='/oval/820-L3.374.4.40_Legend_Diver_watch.jpg.avif' height={404} width={404} alt='watch' style={{ rotate: '45deg' }} /></div>
+            <div className='fontfam font-serif font-bold text-lg mt-[80px] text-center '>HYDROCONQUEST</div>
+            <div className='fontfam w-[300px] md:w-[400px] font-serif text-sm mt-[40px] text-center text-gray-600'>Inspired by the unique requirements of this sport, HYDROCONQUEST timepieces preserve the traditional style of diving watches.</div>
+            <button className='fontfam mt-3 bg-blue-900 text-white h-[50px] w-[100px] rounded-[100px] ml-[30%]'>Discover</button>
+            <style jsx>
+              {`
+              .fontfam{
+                font-family: 'Montserrat', sans-serif;
+              }
+              `}
+            </style>
+          </div>
+        </div>
+
+      </div>
+      <div className='up opacity-0  fontfam mt-5 mb-5 cover w-[100vw] h-[500px]'><div className='m-5 absolute mt-[100px] text-white'><div className='text-[50px] sm:text-[90px]'>Longines Spirit Flyback</div><div className='m-4 hover:translate-x-2 transition ease cursor-pointer'>Discover the watch <i className="fa-solid fa-arrow-right" style={{ color: "#ffffff" }}></i></div></div>
+        <style jsx>
+          {`
+
+        .fontfam{
+          font-family: 'Montserrat', sans-serif;
+        }
+
+        .cover {
+          position: relative; /* Ensure that child elements are positioned relative to this */
+        }
+        .cover::before {
+          content: ""; /* Create a pseudo-element for the overlay */
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-image: url("/covers/588-longines-majetek-1938.jpg");
+          background-size: cover;
+          filter: brightness(0.5); /* Adjust the brightness here */
+        }
+        
+        `}
+        </style>
+      </div>
+      <div className='up opacity-0 m-[100px]'>
+        <style jsx>
+          {`
+              .fontfam{
+                font-family: 'Montserrat', sans-serif;
+              }
+              `}
+        </style>
+
+        <div className="grid"><div className=' text-center text-[24px] md:text-[34px] fontfam font-extrabold'>AMBASSADORS & PERSONALITIES </div><div className='text-center text-sm fontfam'>
+          As for Longines, elegance is also the key word of our ambassadors and personalities.</div></div></div>
+      <div className='up opacity-0 grid md:m-1 justify-center w-[100vw] md:flex  mt-[100px]'>
+        <div className="flex w-[100vw] md:w-[500px] h-[700px] justify-center">
+          <div className='grid'>
+            <div className="mt-[100px] w-[300px] h-[255px] md:w-[430px] md:h-[320px] rounded-l-[500px] rounded-r-[500px] rotate-[-45deg]  overflow-hidden"><Image className='relative left-9 top-[-18%] hover:scale-110 transition duration-300 ease cursor-pointer' src='/ambassadors/931-ambassador-hp-cover-jennifer-lawrence.jpg.avif' height={404} width={404} alt='watch' style={{ rotate: '45deg' }} />
+            </div>
+            <div className='fontfam font-serif font-bold text-lg mt-[80px] text-center '>HYDROCONQUEST</div>
+            <div className='fontfam w-[300px] md:w-[400px]  text-sm mt-[40px] text-center text-gray-600'>Inspired by the unique requirements of this sport, HYDROCONQUEST timepieces preserve the traditional style of diving watches.</div>
+            <button className='fontfam mt-3 bg-blue-900 text-white h-[50px] w-[100px] rounded-[100px] ml-[30%]'>Discover</button>
+            <style jsx>
+              {`
+              .fontfam{
+                font-family: 'Montserrat', sans-serif;
+              }
+              `}
+            </style>
+          </div>
+        </div>
+        <div className="upd opacity-0 flex w-[100vw] md:mt-[200px] md:w-[500px] h-[700px] justify-center">
+          <div className='grid'>
+            <div className="mt-[100px] w-[300px] h-[255px] md:w-[430px] md:h-[320px] rounded-l-[500px] rounded-r-[500px] rotate-[-45deg]  overflow-hidden"><Image className='relative left-9 top-[-18%] hover:scale-110 transition duration-300 ease cursor-pointer' src='/ambassadors/937-ambassador-hp-cover-rege-jean-page.jpg.avif' height={404} width={404} alt='watch' style={{ rotate: '45deg' }} /></div>
+            <div className='fontfam font-serif font-bold text-lg mt-[80px] text-center '>HYDROCONQUEST</div>
+            <div className='fontfam w-[300px] md:w-[400px] font-serif text-sm mt-[40px] text-center text-gray-600'>Inspired by the unique requirements of this sport, HYDROCONQUEST timepieces preserve the traditional style of diving watches.</div>
+            <button className='fontfam mt-3 bg-blue-900 text-white h-[50px] w-[100px] rounded-[100px] ml-[30%]'>Discover</button>
+            <style jsx>
+              {`
+              .fontfam{
+                font-family: 'Montserrat', sans-serif;
+              }
+              `}
+            </style>
+          </div>
+        </div>
+
+      </div>
+      <Footer/>
       <Script src="/scripts/index.js" />
+
     </>
   )
 }

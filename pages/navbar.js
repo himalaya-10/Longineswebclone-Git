@@ -68,5 +68,6 @@ export default function navbar() {
         <div className='hidden md:block m-5 cursor-pointer  md:hover:scale-[1.1]'><i className="fa-solid fa-cart-shopping"></i></div>
       </div>
     </div>
+    
   )
 }
